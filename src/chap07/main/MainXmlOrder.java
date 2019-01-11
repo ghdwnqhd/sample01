@@ -8,7 +8,8 @@ public class MainXmlOrder {
 
 	public static void main(String[] args) {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:chap07/aopOrder.xml");
-
+		System.out.println("Zz");
+		System.out.println("Zz");
 		Calculator impeCal = ctx.getBean("impeCal", Calculator.class);
 		impeCal.factorial(3);
 		impeCal.factorial(5);
